@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ICTFlow" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Ensure the layout avoids the status bar -->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+</resources>
