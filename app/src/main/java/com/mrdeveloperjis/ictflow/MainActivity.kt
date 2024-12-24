@@ -4,7 +4,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.webkit.WebResourceRequest
-import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
@@ -67,7 +66,10 @@ class MainActivity : ComponentActivity() {
         layout.addView(webView)
         setContentView(layout)
 
-        webView.loadUrl("https://mrdeveloperjis.github.io/ict/") // Load your website
+        webView.loadUrl("https://mrdeveloperjis.github.io/ict/")
+
+        // Check for updates
+        UpdateChecker(this).execute()
     }
 
     override fun onBackPressed() {
